@@ -1,0 +1,7 @@
+{
+  "name": "Cdexatas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

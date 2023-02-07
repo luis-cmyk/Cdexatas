@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Provas em Aberto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let pok of pokemons">
+    <img alt="Silhouette of mountains" src="assets/mat.jpg" />
+    <ion-card-header>
+      <ion-card-title>{{pok.Nome_Prova}}</ion-card-title> <!--Nome da prova-->
+      <ion-card-subtitle>{{pok.Data_Inicio}}</ion-card-subtitle> <!--Data da prova-->
+    </ion-card-header>
+
+    <ion-card-content>
+      {{pok.Descricao}}<!--Descrição da prova-->
+    </ion-card-content>
+  </ion-card>
+</ion-content>
